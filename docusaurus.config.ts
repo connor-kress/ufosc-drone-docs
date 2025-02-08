@@ -54,7 +54,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {
           href: 'https://github.com/ufosc/osc-drone',
@@ -70,8 +70,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Tutorials',
+              to: '/docs/category/tutorials',
+            },
+            {
+              label: 'Resources',
+              to: '/docs/category/resources',
             },
           ],
         },

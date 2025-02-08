@@ -5,7 +5,11 @@ title: Installation
 
 # Installation
 
-## ROS Installation
+## Prerequisites
+
+ROS is only officially supported on Ubuntu Linux (x64 and ARM), but can also be compiled from source for other Unix targets. If you are on Windows, you will have to use a WSL (recommended) or a virtual machine to run Ubuntu.
+
+## ROS-Noetic Installation
 
 **Robot Operating System (ROS)** is the core framework for building and running robotic applications. It provides the middleware, communication tools, and libraries for developing robotics software.
 
