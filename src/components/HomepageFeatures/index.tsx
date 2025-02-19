@@ -5,38 +5,38 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Innovative Drone Technology',
+    // Svg: require('@site/static/img/example_image.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Our experimental autonomous drone leverages the latest in robotics and
+        simulation to push the boundaries of real-world flight and automation.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Comprehensive Documentation',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        From hardware setup to advanced autonomous control, our detailed guides
+        help you understand every step of our process, whether you're a
+        beginner or an experienced developer.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Community-Driven Collaboration',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Developed under the UF Open Source Club (OSC), our project is fueled
+        by a collaborative spirit, empowering innovators to contribute and
+        learn together.
       </>
     ),
   },
@@ -45,9 +45,11 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
+      {Svg && 
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+      }
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>

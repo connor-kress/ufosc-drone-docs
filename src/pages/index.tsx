@@ -33,8 +33,14 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={"Home"}
+      description={`
+        Discover the UF Open Source Club's experimental autonomous drone
+        project. Our detailed documentation covers robotics integration,
+        simulation, hardware control, and real-world drone technology, making
+        it an essential resource for both beginners and experienced developers.
+      `.trim()}
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />

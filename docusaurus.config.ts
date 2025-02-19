@@ -46,8 +46,10 @@ const config: Config = {
     navbar: {
       title: 'OSC Drone',
       logo: {
+        // https://www.svgrepo.com/svg/477435/drone-8
         alt: 'Drone Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-black.svg',
+        srcDark: 'img/logo-white.svg',
       },
       items: [
         {
