@@ -13,8 +13,8 @@ Get started quickly by following our [Installation Guide](tutorials/installation
 
 ## Explore the Docs
 
-- **Tutorials:** Detailed installation and how-to guides covering MAVROS, SMACH, and more.
-- **Resources:** Background information, references, and additional links.
-- **Roadmap:** Our development plans and future directions.
+- **[Tutorials](/docs/category/tutorials)**: Detailed installation and how-to guides covering MAVROS, SMACH, and more.
+- **[Resources](/docs/category/resources)**: Background information, references, and additional links.
+- **[Roadmap](/docs/roadmap)**: Our development plans and future directions.
 
 Happy exploring!
